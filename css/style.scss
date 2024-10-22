@@ -1,0 +1,265 @@
+@import "helper";
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+@import "../fonts/ptrootui";
+
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 8px;
+  border-radius: 5px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #3089FF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3383ee;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #181E34;
+  font-family: 'PT Root UI';
+}
+
+a {
+  text-decoration: none;
+}
+
+.abhaya-libre-regular {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.abhaya-libre-medium {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.abhaya-libre-semibold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.abhaya-libre-bold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.abhaya-libre-extrabold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+body{
+  background-color: #f5f6f8;
+}
+
+.container{
+  max-width: 1170px;
+}
+
+
+.header{
+  width: 100%;
+  height: 45.625rem;
+  background: url("../images/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  &-join{
+    width: 16.875rem;
+    height: 11.25rem;
+    background: rgba(29, 29, 31, 0.7);
+    border-radius: 14px 14px 0 0;
+    position: absolute;
+    right: 0.9375rem;
+    bottom: 0;
+    backdrop-filter: blur(15px);
+    color: #FFF;
+    font-weight: 800;
+    font-size: 2.25rem;
+    padding: 1.875rem 1.25rem;
+    line-height: 2.75rem;
+
+    @media (max-width: 767px){
+      width: calc(100% - 30px);
+      right: 15px;
+    }
+  }
+}
+
+.dropdown{
+  .dropdown-toggle{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #FFF;
+    transition: 0.3s;
+    position: relative;
+
+    .icon-chevron-down{
+      position: absolute;
+      right: 5px;
+    }
+
+    &:hover, &:focus-visible, &:focus, &:active{
+      background-color: #fff;
+      color: #1a1d20;
+      border: 0;
+    }
+
+    .icon-chevron-down{
+      transition: 0.3s;
+    }
+
+    &:after{
+      display: none;
+    }
+    .icon-down{
+      transform: rotate(-0);
+      transition: 0.3s;
+      font-size: 6px;
+      margin-left: 17px;
+    }
+
+    &.show{
+      .icon-down{
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+}
+
+.get-ultimate{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 16.875rem;
+  height: 19.25rem;
+  background: #FFF;
+  border-radius: 0 0 14px 14px;
+  padding: 1.875rem 1.25rem;
+
+  @media (max-width: 767px){
+    width: calc(100% - 30px);
+    right: 15px;
+  }
+  &-input{
+    margin-top: 2.1875rem;
+    width: 100%;
+    input{
+      width: 100%;
+      height: 3rem;
+      background: #FFF;
+      border: 1px solid rgba(44, 165, 146, 0.25);
+      border-radius: 7px;
+      padding-left: 10px;
+
+      &::placeholder{
+        color: rgba(29, 29, 31, 0.25);
+        font-weight: 500;
+        font-size: 1.0625rem;
+      }
+    }
+  }
+}
+
+.home-slider{
+  .slick-track {
+    padding-bottom: 30px;
+    padding-left: 15px;
+  }
+  .slick-arrow{
+    display: none !important;
+  }
+  .slick-list{
+    padding-left: 0 !important;
+  }
+  .slick-dots{
+    @include flex('c', 'c');
+    list-style: none;
+    li{
+      margin-right: 10px;
+      button{
+        font-size: 0;
+        width: 30px;
+        height: 5px;
+        opacity: 0.2;
+        background: #2CA592;
+      }
+
+      &.slick-active{
+        button{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+.basement{
+  width: 100%;
+  text-align: center;
+  color: #1D1D1F;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  position: relative;
+  &:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgb(29 29 31 / 10%);
+    display: block;
+    top: 50%;
+    position: absolute;
+  }
+
+  span{
+    background: #f5f6f8;
+    position: relative;
+    padding: 0 10px;
+  }
+}
