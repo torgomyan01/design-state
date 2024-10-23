@@ -150,36 +150,38 @@ body {
   }
 }
 
-.dropdown .dropdown-toggle {
+.dropdown .btn {
   display: flex;
   justify-content: start;
   align-items: center;
-  border: 1px solid #FFF;
-  transition: 0.3s;
+  border: 0px solid #FFF !important;
   position: relative;
+  color: #000 !important;
+  background-color: #fff !important;
 }
-.dropdown .dropdown-toggle .icon-chevron-down {
+.dropdown .btn .icon-chevron-down {
   position: absolute;
   right: 5px;
 }
-.dropdown .dropdown-toggle:hover, .dropdown .dropdown-toggle:focus-visible, .dropdown .dropdown-toggle:focus, .dropdown .dropdown-toggle:active {
-  background-color: #fff;
-  color: #1a1d20;
-  border: 0;
+.dropdown .btn:hover, .dropdown .btn:focus-visible, .dropdown .btn:focus, .dropdown .btn:active {
+  background-color: #fff !important;
+  color: #1a1d20 !important;
+  outline: none !important;
+  border: 0 solid transparent !important;
 }
-.dropdown .dropdown-toggle .icon-chevron-down {
+.dropdown .btn .icon-chevron-down {
   transition: 0.3s;
 }
-.dropdown .dropdown-toggle:after {
+.dropdown .btn:after {
   display: none;
 }
-.dropdown .dropdown-toggle .icon-down {
+.dropdown .btn .icon-down {
   transform: rotate(0);
   transition: 0.3s;
   font-size: 6px;
   margin-left: 17px;
 }
-.dropdown .dropdown-toggle.show .icon-down {
+.dropdown .btn.show .icon-down {
   transform: rotate(-180deg);
 }
 
@@ -217,33 +219,27 @@ body {
   font-size: 1.0625rem;
 }
 
-.home-slider .slick-track {
-  padding-bottom: 30px;
+.home-slider {
+  overflow: hidden;
+  padding-bottom: 50px;
   padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
 }
-.home-slider .slick-arrow {
-  display: none !important;
+.home-slider .swiper-pagination {
+  margin-top: 1.5625rem;
 }
-.home-slider .slick-list {
-  padding-left: 0 !important;
-}
-.home-slider .slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-.home-slider .slick-dots li {
+.home-slider .swiper-pagination span {
   margin-right: 10px;
-}
-.home-slider .slick-dots li button {
   font-size: 0;
   width: 30px;
   height: 5px;
   opacity: 0.2;
   background: #2CA592;
+  border-radius: 0;
+  transition: 0.3s;
 }
-.home-slider .slick-dots li.slick-active button {
+.home-slider .swiper-pagination span[aria-current=true] {
   opacity: 1;
 }
 

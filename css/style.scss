@@ -100,7 +100,6 @@ body{
   max-width: 1170px;
 }
 
-
 .header{
   width: 100%;
   height: 45.625rem;
@@ -129,13 +128,15 @@ body{
 }
 
 .dropdown{
-  .dropdown-toggle{
+  .btn{
     display: flex;
     justify-content: start;
     align-items: center;
-    border: 1px solid #FFF;
-    transition: 0.3s;
+    border: 0px solid #FFF !important;
     position: relative;
+    color: #000 !important;
+    background-color: #fff !important;
+
 
     .icon-chevron-down{
       position: absolute;
@@ -143,9 +144,10 @@ body{
     }
 
     &:hover, &:focus-visible, &:focus, &:active{
-      background-color: #fff;
-      color: #1a1d20;
-      border: 0;
+      background-color: #fff !important;
+      color: #1a1d20 !important;
+      outline: none !important;
+      border: 0 solid transparent !important;
     }
 
     .icon-chevron-down{
@@ -205,34 +207,29 @@ body{
   }
 }
 
-.home-slider{
-  .slick-track {
-    padding-bottom: 30px;
-    padding-left: 15px;
-  }
-  .slick-arrow{
-    display: none !important;
-  }
-  .slick-list{
-    padding-left: 0 !important;
-  }
-  .slick-dots{
-    @include flex('c', 'c');
-    list-style: none;
-    li{
-      margin-right: 10px;
-      button{
-        font-size: 0;
-        width: 30px;
-        height: 5px;
-        opacity: 0.2;
-        background: #2CA592;
-      }
 
-      &.slick-active{
-        button{
-          opacity: 1;
-        }
+
+.home-slider{
+
+  overflow: hidden;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  .swiper-pagination{
+    margin-top: 1.5625rem;
+    span{
+      margin-right: 10px;
+      font-size: 0;
+      width: 30px;
+      height: 5px;
+      opacity: 0.2;
+      background: #2CA592;
+      border-radius: 0;
+      transition: 0.3s;
+
+      &[aria-current="true"]{
+        opacity: 1;
       }
     }
   }

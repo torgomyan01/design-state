@@ -15,448 +15,491 @@
   <link rel="apple-touch-icon" href="android-chrome-192x192.png">
   <meta name="msapplication-config" content="browserconfig.xml"/>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="icons/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/slick.css">
+
+  <!-- Swiper CSS -->
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="css/style.css">
 
   <title>DESIGN STATE</title>
 </head>
 <body>
 
+<div class="overflow-hidden">
 
-<div class="bgc-white h-60 h-md-130 flex-js-c">
-  <div class="container">
-    <div class="flex-sb-c w-100">
-      <a href="/">
-        <img src="images/logo-site.svg" alt="logo -site" width="139" height="34" class="w-98 w-md-138 h-auto">
-      </a>
-      <div class="flex-jc-ae d-none d-lg-flex">
-        <a href="#" class="fs-20 c-black fw-300 me-37">
-          <span class="c-black-500 d-block fs-10 ls-4 text-uppercase">Designers:</span>
-          Architectural
+  <div class="bgc-white h-60 h-md-130 flex-js-c">
+    <div class="container">
+      <div class="flex-sb-c w-100">
+        <a href="/">
+          <img src="images/logo-site.svg" alt="logo -site" width="139" height="34" class="w-98 w-md-138 h-auto">
         </a>
-        <a href="#" class="fs-20 c-black fw-300 me-37">
-          Interior
-        </a>
-        <a href="#" class="fs-20 c-black fw-300 me-37 flex-js-c">
-          More
-          <i class="icon-chevron-down ms-1"></i>
-        </a>
-        <a href="#" class="fs-20 c-black fw-300">
-          <i class="icon-search me-1 fs-16"></i>
-          Search
-        </a>
-      </div>
-      <div class="flex-je-ae">
-        <div class="w-40 h-40 flex-jc-c me-42 fs-28 d-flex d-lg-none">
-          <i class="icon-menu"></i>
+        <div class="flex-jc-ae d-none d-lg-flex">
+          <a href="#" class="fs-20 c-black fw-300 me-37">
+            <span class="c-black-500 d-block fs-10 ls-4 text-uppercase">Designers:</span>
+            Architectural
+          </a>
+          <a href="#" class="fs-20 c-black fw-300 me-37">
+            Interior
+          </a>
+          <a href="#" class="fs-20 c-black fw-300 me-37 flex-js-c">
+            More
+            <i class="icon-chevron-down ms-1"></i>
+          </a>
+          <a href="#" class="fs-20 c-black fw-300">
+            <i class="icon-search me-1 fs-16"></i>
+            Search
+          </a>
         </div>
-        <a href="#" class="fs-20 c-black fw-300 me-37 fl-jc-c">
-          <span class="c-black-500 fs-10 ls-4 text-uppercase d-none d-md-block">Sign in:</span>
-          <i class="icon-user me-1 fs-30 fs-md-20"></i>
-          <span class="d-none d-md-inline-block">Users</span>
-        </a>
-        <a href="#" class="fs-20 c-black fw-300 fl-jc-c d-block d-md-none">
-          <i class="icon-logout me-1 fs-30"></i>
-        </a>
-        <a href="#" class="fs-20 c-black fw-300 d-none d-md-block">
-          <i class="icon-home me-1"></i>
-          Professional
-        </a>
+        <div class="flex-je-ae">
+          <div class="w-40 h-40 flex-jc-c me-42 fs-28 d-flex d-lg-none">
+            <i class="icon-menu"></i>
+          </div>
+          <a href="#" class="fs-20 c-black fw-300 me-37 fl-jc-c">
+            <span class="c-black-500 fs-10 ls-4 text-uppercase d-none d-md-block">Sign in:</span>
+            <i class="icon-user me-1 fs-30 fs-md-20"></i>
+            <span class="d-none d-md-inline-block">Users</span>
+          </a>
+          <a href="#" class="fs-20 c-black fw-300 fl-jc-c d-block d-md-none">
+            <i class="icon-logout me-1 fs-30"></i>
+          </a>
+          <a href="#" class="fs-20 c-black fw-300 d-none d-md-block">
+            <i class="icon-home me-1"></i>
+            Professional
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<header class="header">
+  <header class="header">
 
-  <div class="container pt-90 position-relative h-100">
-    <h1 class="c-white fs-44 fs-md-64 abhaya-libre-bold w-100 mw-639">
-      Discover Your Creative
-      Design Company
-    </h1>
+    <div class="container pt-90 position-relative h-100">
+      <h1 class="c-white fs-44 fs-md-64 abhaya-libre-bold w-100 mw-639">
+        Discover Your Creative
+        Design Company
+      </h1>
 
-    <div class="w-100 !w-md-570 h-93 bgc-white br-7 border mt-38">
-      <label class="w-100 border-bottom flex-js-c ps-20 overflow-hidden br-7">
-        <i class="icon-search"></i>
-        <input type="text" class="border-0 w-100 h-44 ps-2" placeholder="I require a design for...">
-      </label>
-      <div class="flex-sb-c ps-20 h-48">
-        <div class="dropdown w-50">
-          <button class="btn btn-outline-dark dropdown-toggle w-100 ps-0" type="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-            <i class="icon-map me-2"></i>
-            Dubai
-            <i class="icon-chevron-down"></i>
+      <div class="w-100 !w-md-570 h-93 bgc-white br-7 border mt-38">
+        <label class="w-100 border-bottom flex-js-c ps-20 overflow-hidden br-7">
+          <i class="icon-search"></i>
+          <input type="text" class="border-0 w-100 h-44 ps-2" placeholder="I require a design for...">
+        </label>
+        <div class="flex-sb-c ps-20 h-48">
+          <div class="dropdown w-50">
+            <button class="btn btn-outline-dark dropdown-toggle w-100 ps-0" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+              <i class="icon-map me-2"></i>
+              Dubai
+              <i class="icon-chevron-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Russia</a></li>
+              <li><a class="dropdown-item" href="#">Armenia</a></li>
+              <li><a class="dropdown-item" href="#">USA</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-dark me-1 w-50">
+            Find company
           </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Russia</a></li>
-            <li><a class="dropdown-item" href="#">Armenia</a></li>
-            <li><a class="dropdown-item" href="#">USA</a></li>
-          </ul>
         </div>
-        <button class="btn btn-dark me-1 w-50">
-          Find company
-        </button>
       </div>
-    </div>
 
-    <div class="flex-js-s flex-md-js-c mt-30 flex-column flex-md-row ">
-      <span class="fs-10 fw-300 text-uppercase me-8 c-white mb-6 mb-md-0">Enlist a specialist:</span>
-      <div class="flex-js-c">
+      <div class="flex-js-s flex-md-js-c mt-30 flex-column flex-md-row ">
+        <span class="fs-10 fw-300 text-uppercase me-8 c-white mb-6 mb-md-0">Enlist a specialist:</span>
+        <div class="flex-js-c">
         <span
             class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">ALL</span>
-        <span
-            class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">Kitchen</span>
-        <span
-            class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">Bedroom</span>
-        <span
-            class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">Living Room</span>
-        <span
-            class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">Kids</span>
-      </div>
-    </div>
-
-    <div class="header-join abhaya-libre-extrabold">
-      Join to our
-      Dubai
-      Community
-    </div>
-  </div>
-
-</header>
-
-
-<div class="container position-relative pt-350 pt-md-70">
-  <div class="get-ultimate">
-    <p class="c-gray lh-24">
-      Get ultimate tool for your design company including CRM and Marketing tools
-    </p>
-    <div class="cursor-pointer c-gray mt-20">
-      Read More
-      <i class="icon-chevron-down ms-1"></i>
-    </div>
-
-    <form action="/">
-      <label class="get-ultimate-input">
-        <input type="text" placeholder="I need design for...">
-      </label>
-      <button class="btn btn-success mt-12 bgc-green border-0 w-100 h-48" type="submit">Join</button>
-    </form>
-  </div>
-
-  <div class="ps-15">
-    <h1 class="fs-36 abhaya-libre-bold mb-18 c-black">
-      About us
-    </h1>
-    <h3 class="c-black fs-16 w-100 pe-md-400">
-      At Design State, we are dedicated to transforming visions into reality by connecting users with the industry's top
-      design companies. Our platform is a comprehensive hub that caters to all your design needs, whether you are
-      looking
-      to create stunning architectural masterpieces, innovative interior spaces, breathtaking landscapes, or vibrant
-      urban
-      environments.
-    </h3>
-    <div class="cursor-pointer c-black flex-js-c">
-      Read More
-      <i class="icon-chevron-down ms-1"></i>
-    </div>
-  </div>
-
-
-  <h1 class="fs-36 abhaya-libre-bold mb-18 c-black mt-80 mt-md-165 ps-15">
-    Popular Services
-  </h1>
-  <div class="home-slider">
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-  </div>
-
-  <h1 class="fs-36 abhaya-libre-bold mb-18 c-black mt-55 ps-15">
-    Design & Renovation
-  </h1>
-  <div class="home-slider">
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-  </div>
-
-  <h1 class="fs-36 abhaya-libre-bold mb-18 c-black mt-55 ps-15">
-    Suppliers
-  </h1>
-  <div class="home-slider">
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-  </div>
-
-  <h1 class="fs-36 abhaya-libre-bold mb-18 c-black mt-55 ps-15">
-    Outdoor Services
-  </h1>
-  <div class="home-slider">
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-    <div class="w-300 overflow-hidden br-14 bgc-white shadow me-30">
-      <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
-           class="w-100 h-190 object-fit-cover">
-      <a href="#">
-        <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
-      </a>
-    </div>
-  </div>
-
-  <div class="basement mt-100 mt-md-154">
-    <span class="abhaya-libre-bold">Basement</span>
-  </div>
-
-  <footer>
-    <div class="row mt-36">
-      <div class="col-12 col-sm-6 col-md-3">
-        <h4 class="fs-17 c-black fw-300 mb-10">Professionals</h4>
-        <a href="#" class="c-black d-block">Architectural Design</a>
-        <a href="#" class="c-black d-block">Landscape Design</a>
-        <a href="#" class="c-black d-block">Interior Design</a>
-        <a href="#" class="c-black d-block">Kitchen & Bathroom Design</a>
-        <a href="#" class="c-black d-block">Lighting Design</a>
-        <a href="#" class="c-black d-block">Ergonomic Design</a>
-        <a href="#" class="c-black d-block">Furniture Design</a>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <h4 class="fs-17 c-black fw-300 mb-10 opacity-0">Professionals</h4>
-        <a href="#" class="c-black d-block">Green Design</a>
-        <a href="#" class="c-black d-block">Facade Design</a>
-        <a href="#" class="c-black d-block">Exhibition Design</a>
-        <a href="#" class="c-black d-block">Graphic Design in Architecture</a>
-        <a href="#" class="c-black d-block">Adaptive Design</a>
-        <a href="#" class="c-black d-block">HVAC Design</a>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 mt-40 mt-md-0">
-        <h4 class="fs-17 c-black fw-300 mb-10">About ДС</h4>
-        <a href="#" class="c-black d-block">DS Pro</a>
-        <a href="#" class="c-black d-block">FAQs</a>
-        <a href="#" class="c-black d-block">Contact Us</a>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 mt-40 mt-md-0">
-        <h4 class="fs-17 c-black fw-300 mb-10">Documents</h4>
-        <a href="#" class="c-black d-block">Privacy Policy</a>
-        <a href="#" class="c-black d-block">Term of Use</a>
-
-        <div class="flex-je-c mt-50">
-          <a href="#" class="me-27">
-            <img src="images/x.svg" alt="x" width="23" height="23">
-          </a>
-          <a href="#" class="me-27">
-            <img src="images/youtube.svg" alt="x" width="24" height="18">
-          </a>
-          <a href="#" class="me-27">
-            <img src="images/snapchat.svg" alt="x" width="29" height="29">
-          </a>
-          <a href="#" class="me-27">
-            <img src="images/tiktok.svg" alt="x" width="23" height="23">
-          </a>
-          <a href="#" class="me-27">
-            <img src="images/google.svg" alt="x" width="26" height="26">
-          </a>
+          <span
+              class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">Kitchen</span>
+          <span
+              class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">Bedroom</span>
+          <span
+              class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">Living Room</span>
+          <span
+              class="bgc-white px-2 py-1 fs-10 fw-300 text-uppercase br-30 me-6 cursor-pointer trans hover:[bgc-green,c-white]">Kids</span>
         </div>
       </div>
+
+      <div class="header-join abhaya-libre-extrabold">
+        Join to our
+        Dubai
+        Community
+      </div>
     </div>
 
-    <div class="flex-js-s flex-md-sb-c mt-84 flex-column flex-md-row">
-      <p class="c-black">© DesignState 2024.<img src="images/ds.svg" alt="ds" height="15" width="17"
-                                                           class="mx-2"> Search for professional architects and
-        designers</p>
-      <p class="c-black text-end">
-        Made with ❤ by <a href="#" class="c-black">WDA.kz</a>
+  </header>
+
+
+  <div class="container position-relative pt-350 pt-md-70">
+    <div class="get-ultimate">
+      <p class="c-gray lh-24">
+        Get ultimate tool for your design company including CRM and Marketing tools
       </p>
-    </div>
-  </footer>
+      <div class="cursor-pointer c-gray mt-20">
+        Read More
+        <i class="icon-chevron-down ms-1"></i>
+      </div>
 
+      <form action="/">
+        <label class="get-ultimate-input">
+          <input type="text" placeholder="I need design for...">
+        </label>
+        <button class="btn btn-success mt-12 bgc-green border-0 w-100 h-48" type="submit">Join</button>
+      </form>
+    </div>
+
+    <div class="ps-15">
+      <h1 class="fs-36 abhaya-libre-bold mb-18 c-black">
+        About us
+      </h1>
+      <h3 class="c-black fs-16 w-100 pe-md-400">
+        At Design State, we are dedicated to transforming visions into reality by connecting users with the industry's top
+        design companies. Our platform is a comprehensive hub that caters to all your design needs, whether you are
+        looking
+        to create stunning architectural masterpieces, innovative interior spaces, breathtaking landscapes, or vibrant
+        urban
+        environments.
+      </h3>
+      <div class="cursor-pointer c-black flex-js-c">
+        Read More
+        <i class="icon-chevron-down ms-1"></i>
+      </div>
+    </div>
+
+
+    <h1 class="fs-36 abhaya-libre-bold mb-18 c-black mt-80 mt-md-165 ps-15">
+      Popular Services
+    </h1>
+    <div class="home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <h1 class="fs-36 abhaya-libre-bold mb-18 c-black mt-55 ps-15">
+      Design & Renovation
+    </h1>
+    <div class="home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <h1 class="fs-36 abhaya-libre-bold mb-18 c-black mt-55 ps-15">
+      Suppliers
+    </h1>
+    <div class="home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <h1 class="fs-36 abhaya-libre-bold mb-18 c-black mt-55 ps-15">
+      Outdoor Services
+    </h1>
+    <div class="home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="w-100 overflow-hidden br-14 bgc-white shadow me-30">
+            <img src="images/product-image.jpg" alt="product-image" width="540" height="380"
+                 class="w-100 h-190 object-fit-cover">
+            <a href="#">
+              <h3 class="fs-17 c-black p-20 fw-300 mb-0">Architectural Design</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+    <div class="basement mt-100 mt-md-154">
+      <span class="abhaya-libre-bold">Basement</span>
+    </div>
+
+    <footer>
+      <div class="row mt-36">
+        <div class="col-12 col-sm-6 col-md-3">
+          <h4 class="fs-17 c-black fw-300 mb-10">Professionals</h4>
+          <a href="#" class="c-black d-block">Architectural Design</a>
+          <a href="#" class="c-black d-block">Landscape Design</a>
+          <a href="#" class="c-black d-block">Interior Design</a>
+          <a href="#" class="c-black d-block">Kitchen & Bathroom Design</a>
+          <a href="#" class="c-black d-block">Lighting Design</a>
+          <a href="#" class="c-black d-block">Ergonomic Design</a>
+          <a href="#" class="c-black d-block">Furniture Design</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <h4 class="fs-17 c-black fw-300 mb-10 opacity-0">Professionals</h4>
+          <a href="#" class="c-black d-block">Green Design</a>
+          <a href="#" class="c-black d-block">Facade Design</a>
+          <a href="#" class="c-black d-block">Exhibition Design</a>
+          <a href="#" class="c-black d-block">Graphic Design in Architecture</a>
+          <a href="#" class="c-black d-block">Adaptive Design</a>
+          <a href="#" class="c-black d-block">HVAC Design</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mt-40 mt-md-0">
+          <h4 class="fs-17 c-black fw-300 mb-10">About ДС</h4>
+          <a href="#" class="c-black d-block">DS Pro</a>
+          <a href="#" class="c-black d-block">FAQs</a>
+          <a href="#" class="c-black d-block">Contact Us</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mt-40 mt-md-0">
+          <h4 class="fs-17 c-black fw-300 mb-10">Documents</h4>
+          <a href="#" class="c-black d-block">Privacy Policy</a>
+          <a href="#" class="c-black d-block">Term of Use</a>
+
+          <div class="flex-je-c mt-50">
+            <a href="#" class="me-27">
+              <img src="images/x.svg" alt="x" width="23" height="23">
+            </a>
+            <a href="#" class="me-27">
+              <img src="images/youtube.svg" alt="x" width="24" height="18">
+            </a>
+            <a href="#" class="me-27">
+              <img src="images/snapchat.svg" alt="x" width="29" height="29">
+            </a>
+            <a href="#" class="me-27">
+              <img src="images/tiktok.svg" alt="x" width="23" height="23">
+            </a>
+            <a href="#" class="me-27">
+              <img src="images/google.svg" alt="x" width="26" height="26">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-js-s flex-md-sb-c mt-84 flex-column flex-md-row">
+        <p class="c-black">© DesignState 2024.<img src="images/ds.svg" alt="ds" height="15" width="17"
+                                                   class="mx-2"> Search for professional architects and
+          designers</p>
+        <p class="c-black text-end">
+          Made with ❤ by <a href="#" class="c-black">WDA.kz</a>
+        </p>
+      </div>
+    </footer>
+
+
+  </div>
 
 </div>
+
 
 
 <script src="js/fastfront.js"></script>
