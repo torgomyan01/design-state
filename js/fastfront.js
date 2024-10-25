@@ -13,7 +13,9 @@ const colors = {
     white: '#FFFFFF',
     black: '#1D1D1F',
     green: '#2CA592',
+    openGreen: '#2BD700',
     yellow: '#FFD852',
+    red: '#FE504F',
 }
 
 
@@ -93,6 +95,7 @@ const classTypes = [
     {minClass: 'pt-', styleName: 'padding-top'},
     {minClass: 'pb-', styleName: 'padding-bottom'},
     {minClass: 'p-', styleName: 'padding'},
+    {minClass: 'zoom-', styleName: 'zoom'},
     {minClass: costs.paddingY, styleName: 'padding'},
     {minClass: costs.paddingX, styleName: 'padding'},
     // FONT SIZE

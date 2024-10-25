@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?onie8x');
-  src:  url('fonts/icomoon.eot?onie8x#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?onie8x') format('truetype'),
-    url('fonts/icomoon.woff?onie8x') format('woff'),
-    url('fonts/icomoon.svg?onie8x#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?umzzb6');
+  src:  url('fonts/icomoon.eot?umzzb6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?umzzb6') format('truetype'),
+    url('fonts/icomoon.woff?umzzb6') format('woff'),
+    url('fonts/icomoon.svg?umzzb6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -39,6 +39,34 @@
 }
 .icon-search:before {
   content: "\e90c";
+}
+.icon-verify-user:before {
+  content: "\e91d";
+  color: #9bc0f8;
+}
+.icon-like:before {
+  content: "\e91c";
+}
+.icon-go-do:before {
+  content: "\e91b";
+}
+.icon-lk:before {
+  content: "\e917";
+}
+.icon-yt:before {
+  content: "\e918";
+}
+.icon-x:before {
+  content: "\e919";
+}
+.icon-fb:before {
+  content: "\e91a";
+}
+.icon-plaus:before {
+  content: "\e916";
+}
+.icon-open-link:before {
+  content: "\e915";
 }
 .icon-filter:before {
   content: "\e914";
