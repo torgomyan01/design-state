@@ -16,6 +16,7 @@ const colors = {
     openGreen: '#2BD700',
     yellow: '#FFD852',
     red: '#FE504F',
+    transparent: '#0000'
 }
 
 
