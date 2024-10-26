@@ -7,6 +7,14 @@
   transition: 0.3s;
 }
 
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
 @font-face {
   font-family: "PT Root UI";
   src: url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
@@ -509,6 +517,57 @@ body {
 
 .company-body .product-slider-pagination {
   padding-right: 30px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 10;
+  background: #fff;
+  padding: 20px;
+  transition: 0.3s;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+}
+.mobile-menu.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.mobile-menu-close {
+  width: 26px;
+  height: 26px;
+  background: #F5F6F8;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu-item {
+  color: #1D1D1F;
+  font-weight: 300;
+  font-size: 17px;
+  margin-bottom: 16px;
+  transition: 0.3s;
+  display: block;
+}
+.mobile-menu-item i {
+  transition: 0.3s;
+}
+.mobile-menu-item:hover {
+  color: #2CA592;
+}
+.mobile-menu-item:hover i {
+  color: #2CA592;
 }
 
 /*# sourceMappingURL=style.css.map */

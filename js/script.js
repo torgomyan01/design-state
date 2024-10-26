@@ -10,6 +10,45 @@ const {
   show: 'show'
 }
 
+const iconMenu = document.querySelector('.icon-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenuClose = document.querySelector('.mobile-menu-close');
+
+iconMenu.addEventListener('click', function (){
+  mobileMenu.classList.toggle(active)
+})
+
+mobileMenuClose.addEventListener('click', function (){
+  mobileMenu.classList.toggle(active)
+})
+
+
+
+const readMore = document.querySelectorAll('.read-more');
+
+readMore.forEach((_item) => {
+  const getParentId = _item.dataset.target;
+
+  const getElem = document.getElementById(getParentId);
+
+  const height = getElem.clientHeight;
+
+  getElem.style.height = `${height / 2}px`;
+  let status = false;
+
+  _item.addEventListener('click', function (){
+    getElem.style.height = `${status ? height / 2 : height}px`;
+    const downIcon = _item.querySelector('i');
+
+    downIcon.style.transform = `rotate(${status ? '0deg' : '-180deg'})`;
+
+    status = !status;
+  })
+
+  console.log(getElem.clientHeight)
+
+})
+
 
 // const queryString = window.location.search;
 // const urlParams = new URLSearchParams(queryString);
