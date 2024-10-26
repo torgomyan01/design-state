@@ -15,6 +15,10 @@
   letter-spacing: 2px;
 }
 
+.border-right {
+  border-right: 1px solid rgba(29, 29, 31, 0.1);
+}
+
 @font-face {
   font-family: "PT Root UI";
   src: url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
@@ -225,7 +229,7 @@ body {
   background: #FFF;
   border: 1px solid rgba(44, 165, 146, 0.25);
   border-radius: 7px;
-  padding-left: 10px;
+  padding-left: 1.25rem;
 }
 .get-ultimate-input input::placeholder {
   color: rgba(29, 29, 31, 0.25);
@@ -502,6 +506,10 @@ body {
   font-size: 16px;
   border: 0 !important;
   white-space: nowrap;
+  transition: 0.3s;
+}
+.nav-tabs .nav-link:hover {
+  color: #2CA592;
 }
 .nav-tabs .nav-link.active {
   font-weight: 300;
@@ -568,6 +576,48 @@ body {
 }
 .mobile-menu-item:hover i {
   color: #2CA592;
+}
+
+footer {
+  padding-bottom: 6.0625rem;
+}
+
+.catalog-more-icon {
+  transform: translate(-4px, 2px);
+  display: inline-block;
+}
+
+.btn-success.bgc-green {
+  border: 1px solid #2CA592 !important;
+}
+.btn-success.bgc-green i {
+  transition: 0.3s;
+}
+.btn-success.bgc-green:hover {
+  background: transparent;
+  color: #2CA592;
+}
+.btn-success.bgc-green:hover i {
+  color: #2CA592;
+}
+
+.btn-trans-green {
+  transition: 0.3s;
+}
+.btn-trans-green i, .btn-trans-green span {
+  transition: 0.3s;
+}
+.btn-trans-green:hover {
+  background: #2CA592 !important;
+  border: 1px solid #2CA592 !important;
+  color: #fff !important;
+}
+.btn-trans-green:hover i, .btn-trans-green:hover span {
+  color: #fff !important;
+}
+
+.breakpoint {
+  transform: translateY(-4px);
 }
 
 /*# sourceMappingURL=style.css.map */
