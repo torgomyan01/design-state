@@ -129,3 +129,18 @@ filterBlockClose?.addEventListener('click', function (){
 
 
 
+
+
+const desktopSearch = document.querySelector('.desktop-search');
+const desktopMenu = document.querySelector('.desktop-menu');
+const desktopMenuBlock = document.querySelector('.desktop-menu-block');
+const closeSearch = document.querySelector('.close-search');
+
+desktopSearch.addEventListener('click', opeCloseSearch)
+
+closeSearch.addEventListener('click', opeCloseSearch)
+
+function opeCloseSearch(){
+  desktopMenu.classList.toggle('close');
+  desktopMenuBlock.classList.toggle('close');
+}
