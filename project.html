@@ -100,48 +100,62 @@
 </div>
 
 
-<div class="bgc-white h-60 h-md-130 flex-js-c">
-  <div class="container">
+<div class="bgc-white h-60 h-md-130 flex-js-c flex-column">
+  <div class="container desktop-menu">
     <div class="flex-sb-c w-100">
       <a href="/">
         <img src="images/logo-site.svg" alt="logo -site" width="139" height="34" class="w-98 w-md-138 h-auto">
       </a>
-      <div class="flex-jc-ae d-none d-lg-flex">
-        <a href="#" class="fs-20 c-black fw-300 me-37 trans link-hover">
+      <div class="flex-jc-c d-none d-lg-flex">
+        <a href="#" class="fs-20 c-black fw-300 me-37 trans link-hover have-tt">
           <span class="c-black-500 d-block fs-10 ls-4 text-uppercase">Designers:</span>
           Architectural
         </a>
         <a href="#" class="fs-20 c-black fw-300 me-37 trans link-hover">
           Interior
         </a>
-        <a href="#" class="fs-20 c-black fw-300 me-37 flex-js-c trans sign-in">
+        <div class="fs-20 c-black fw-300 me-37 flex-js-c trans sign-in menu-category">
           More
           <i class="icon-chevron-down ms-1 trans"></i>
-        </a>
-        <a href="#" class="fs-20 c-black fw-300 trans sign-in">
+
+          <div class="menu-category-body">
+            <a href="#" class="menu-category-body-item">Furniture</a>
+            <a href="#" class="menu-category-body-item">Contract</a>
+            <a href="#" class="menu-category-body-item">Green Design</a>
+          </div>
+        </div>
+        <div class="fs-20 c-black fw-300 trans sign-in desktop-search cursor-pointer">
           <i class="icon-search me-1 fs-16 trans"></i>
           Search
-        </a>
+        </div>
       </div>
       <div class="flex-je-ae">
-        <div class="flex-je-ae">
-          <div class="w-40 h-40 flex-jc-c me-42 fs-28 d-flex d-lg-none">
-            <i class="icon-menu"></i>
-          </div>
-          <a href="#"
-             class="fs-20 c-black fw-300 me-37 fl-jc-c trans sign-in">
-            <span class="c-black-500 fs-10 ls-4 text-uppercase d-none d-md-block">Sign in:</span>
-            <i class="icon-user me-1 fs-30 fs-md-20 trans"></i>
-            <span class="d-none d-md-inline-block trans">Users</span>
-          </a>
-          <a href="#" class="fs-20 c-black fw-300 fl-jc-c d-block d-md-none">
-            <i class="icon-logout me-1 fs-30"></i>
-          </a>
-          <a href="#" class="fs-20 c-black fw-300 d-none d-md-block trans sign-in">
-            <i class="icon-home me-1 trans"></i>
-            Professional
-          </a>
+        <div class="w-40 h-40 flex-jc-c me-42 fs-28 d-flex d-lg-none">
+          <i class="icon-menu"></i>
         </div>
+        <a href="#" class="fs-20 c-black fw-300 me-37 fl-jc-c trans sign-in have-tt">
+          <strong class="c-black-500 fs-10 ls-4 text-uppercase d-none d-md-block">Sign in:</strong>
+          <i class="icon-user me-1 fs-30 fs-md-15 trans"></i>
+          <span class="d-none d-md-inline-block trans">Users</span>
+        </a>
+        <a href="#" class="fs-20 c-black fw-300 fl-jc-c d-block d-md-none">
+          <i class="icon-logout me-1 fs-30"></i>
+        </a>
+        <a href="#" class="fs-20 c-black fw-300 d-none d-md-block trans sign-in">
+          <i class="icon-home me-1 trans"></i>
+          Professional
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container desktop-menu-block close">
+    <div class="w-100 h-48 bgc-white br-7 border mt-38 flex-js-c">
+      <label class="w-100 h-46 flex-js-c ps-20 overflow-hidden">
+        <i class="icon-search"></i>
+        <input type="text" class="border-0 w-100 h-44 ps-2" placeholder="Search by name or Key">
+      </label>
+      <div class="close-search cursor-pointer pe-2 mt-1">
+        <i class="icon-cross fs-20 c-black"></i>
       </div>
     </div>
   </div>
