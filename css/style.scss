@@ -228,6 +228,10 @@ body {
   padding-right: 15px;
   position: relative;
 
+  @media (max-width: 768px){
+    padding-right: 75px;
+  }
+
   .swiper-pagination {
     margin-top: 1.5625rem;
 

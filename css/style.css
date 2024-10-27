@@ -1496,6 +1496,11 @@ body {
   padding-right: 15px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .home-slider {
+    padding-right: 75px;
+  }
+}
 .home-slider .swiper-pagination {
   margin-top: 1.5625rem;
 }
