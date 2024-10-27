@@ -3,6 +3,10 @@
 @import "../fonts/ptrootui";
 
 
+$green: #2CA592;
+$black: #1D1D1F;
+$white: #fff;
+
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
@@ -633,4 +637,51 @@ footer{
 
 .breakpoint{
   transform: translateY(-4px);
+}
+
+//hover:[c-green,child:[i:[c-green|span:[c-green]]]]
+.sign-in{
+  &:hover{
+    color: $green;
+    i, span{
+      color: $green;
+    }
+  }
+}
+
+
+.types{
+  &:hover{
+    background: $green;
+    color: $white;
+  }
+}
+
+.link-hover{
+  &:hover{
+    color: $green;
+  }
+}
+
+//hover:[bgc-green,c-white,child:[span:[c-white]|i:[c-white]]]
+.btn-green-outline{
+  &:hover{
+    background: $green;
+    color: $white;
+    span,i{
+      color: $white;
+    }
+  }
+}
+//hover:[bgc-transparent,c-black]
+.btn-black-outline{
+  &:hover{
+    background: transparent;
+    color: $black;
+  }
+}
+
+.avtar-img{
+  width: 50px;
+  height: 50px;
 }
